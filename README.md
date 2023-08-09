@@ -13,6 +13,7 @@ The new tab will display the most recent pages that the user has been to, groupi
 - Github
 - Stackoverflow
 - Linkedin
+- Leetcode
 - And a general 'Others'.
 
 This will possibly be improved in the future so that pages can be categorized into more websites. Rationale for choosing the ones above is simply because they are the most common websites I have been visiting these days while preparing for a job.

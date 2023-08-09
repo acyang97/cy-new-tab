@@ -16,6 +16,7 @@ const websites = [
   "Github",
   "Stackoverflow",
   "Google",
+  "Leetcode",
   "Others",
 ];
 
@@ -27,8 +28,12 @@ async function update() {
     };
     chrome.history.search(query, (items) => {
       const results = items.map((item) => {
+        let title = item.title;
+        if (title.length > 0 && title.charAt(0) === "(") {
+          title = title.split(" ").slice(1).join(" ");
+        }
         return {
-          title: item.title,
+          title,
           url: item.url,
         };
       });

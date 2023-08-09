@@ -68,6 +68,10 @@ li:not(:last-child) {
   color: #ff7f50;
 }
 
+.leetcode-link {
+  color: #cc8899;
+}
+
 .google-link {
   color: #073b4c;
 }
