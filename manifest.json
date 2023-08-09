@@ -1,0 +1,14 @@
+{
+  "name": "Cy New Tab",
+  "version": "1.0.0",
+  "description": "Revamp your browsing experience with our innovative Chrome extension! Our extension transforms your new tab into a visual timeline of your latest website visits, intelligently grouped by familiar website names. Imagine effortlessly accessing a curated list of the websites you've explored, all in one place. No more scrolling through history or bookmark folders. With our extension, you'll instantly recognize and access your favorite online destinations, neatly categorized for your convenience.Upgrade now and streamline your browsing routine. Embrace the future of new tab functionality with our Chrome extension – designed to simplify your web navigation and keep your online journey exciting and efficient. For now, the websites that will be grouped are Youtube, Notion, Github, Stackoverflow, Linkedin, and a general 'Others'. This will definitely be improved in the future so that the websites grouped by this new tab is more flexible",
+  "manifest_version": 3,
+  "author": "Ang Chun Yang",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": ["history"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
