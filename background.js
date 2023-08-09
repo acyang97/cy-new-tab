@@ -1,5 +1,3 @@
-console.log("backround");
-
 function getHistory(historyQuery) {
   chrome.history.search(historyQuery, (items) => {
     const data = items.map((item) => {
@@ -8,7 +6,6 @@ function getHistory(historyQuery) {
         url: item.urls,
       };
     });
-    console.log("data", data);
     return data;
   });
 }
